@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { Button } from 'react-bootstrap';
+
 
 const Search = () => {
     const[keyword, setKeyword] = useState('');
@@ -9,7 +11,7 @@ const Search = () => {
             type="text"
             value= {keyword} 
             onChange={ (event) => {setKeyword(event.target.value);}}/>
-            <button>Submit</button>
+            <Button className="btn-danger">Submit</Button>
         </form>
     );
 };
